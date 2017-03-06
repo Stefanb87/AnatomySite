@@ -15,6 +15,7 @@ html,body
 nav {
 	background-color: white !important;
 	height: 60px;
+	padding-top: 0px !important;
 }
 .navbar-collapse {
 	margin-top: 5px;
@@ -35,8 +36,20 @@ nav {
 	font-family: 'Montserrat', sans-serif !important;
 	font-size: 12px;
 }
+.aNav:hover {
+	color: darkblue !important;
+	background-color: lightgray !important;
+	transition-property: all;
+    transition-duration: 1s;
+}
+.aNav:focus {
+	color: darkblue !important;
+}
 .navbar-collapse {
 	background-color: white !important;
+}
+#imgFlag {
+	margin-bottom: 2px !important;
 }
 
 /* CSS za carousel*/
@@ -56,6 +69,14 @@ nav {
 	width: 40px !important;
 	height: 5px !important;
 	background-color: lightgray !important;
+}
+.item {
+	background-image: url("https://source.unsplash.com/v1VB91uuyaE/1600x800");
+	height: 740px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 
 /* CSS za prvi DIV*/
@@ -122,29 +143,46 @@ hr {
 	padding: 70px 170px;
 	text-align: center;
 }
-#rowFlex {
+/*#rowFlex {
 	display: flex;
-}
+}*/
 
 #drugiDiv h5 {
 	font-weight: bolder;
 	font-size: 17px;
 	margin-bottom: 25px;
 }
-
-.teamGlavni {
+/*.teamGlavni {
 	flex: 1;
 	margin-left: 15px;
 	margin-right: 15px;
-}
-.teamDrugi {
+}*/
+.teamDrugi1 {
 	position: relative;
-}
-.imgTeam {
-	width: 100%;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/alice-price-avatar.jpg");
 	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.teamDrugi2 {
 	position: relative;
-	z-index: 1;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/max-powell-avatar.jpg");
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.teamDrugi3 {
+	position: relative;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/frederick-miller-avatar.jpg");
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 #divBIO {
 	background-color: blue;
@@ -202,14 +240,6 @@ hr {
 	padding: 40px 10px;
 	}
 }
-@media screen and (max-width: 850px) {
-    .teamGlavni {
-	padding: 40px 10px;
-	display: inline-block;
-	}
-	#rowFlex {
-	display: block;
-}
 }
 /*.pProjekat:hover {
   animation-name: examplee;
@@ -223,13 +253,12 @@ hr {
 
 /* CSS za treci DIV*/
 
-#treciDiv {
-	background-image: url("https://source.unsplash.com/uHJ-DIQtQwk/1600x900");
-	background-attachment: fixed;
+div#treciDiv {
+	
 	background-repeat: no-repeat;
 	background-position: top center;
-	height: 250px;
-	text-align: center;
+	
+	
 }
 #treciDiv h3 {
 	color: white;
@@ -369,7 +398,7 @@ hr {
 /* CSS za peti DIV*/
 
 #petiDiv {
-	background-color: lightgray;
+	background-image: url('http://mnml.seoanatomy.com/wp-content/themes/mnml/images/pattern.png');
 	height: 200px;
 	padding-left: 250px;
 	padding-right: 250px;
@@ -379,6 +408,17 @@ hr {
 	width: 50%;
 	height: 60px;
 	margin-top: 70px;
+}
+.imgHover:hover img {
+   -webkit-transform:scale(1.35); /* Safari and Chrome */
+   -moz-transform:scale(1.35); /* Firefox */
+   -ms-transform:scale(1.35); /* IE 9 */
+   -o-transform:scale(1.35); /* Opera */
+    transform:scale(1.35);
+
+    -webkit-transition: transform 0.70s ease;
+    -moz-transition:transform 0.70s ease;
+    -ms-transition:transform 0.70s ease;
 }
 @media screen and (max-width: 1300px) {
     #petiDiv {
@@ -463,6 +503,9 @@ hr {
 	border: none;
 	outline: 0;
 }
+.rowSadrzaj12 {
+	margin-bottom: 70px;
+}
 @media screen and (max-width: 1400px) {
     #servicesSestiDiv {
 	padding: 100px 0px 100px 50px;
@@ -518,12 +561,15 @@ hr {
 	.btnSestiDiv {
 		width: 160%;
 	}
+	.rowSadrzaj12 {
+		padding-right: 50px;
+	}
 }
 
 /* CSS za sedmi DIV*/
 
 #sedmiDiv {
-	background-color: lightgray;
+	background-image: url('http://mnml.seoanatomy.com/wp-content/themes/mnml/images/pattern.png');
 	height: 250px;
 	text-align: center;
 	padding-top: 80px;
@@ -586,7 +632,7 @@ hr {
 #osmiDiv button:hover {
 	color: black !important;
 	transition-property: all;
-    transition-duration: 1s
+    transition-duration: 1s;
 }
 .BAllBoja {
 	color: darkblue !important;
@@ -594,15 +640,10 @@ hr {
 
 /* CSS za kocke/projekte */
 
-#rowFlex {
-	display: flex;
-}
 .P {
 	height: 250px;
 	position: relative;
 	padding: 0px;
-	flex: 1;
-	margin: 5px 5px;
 	overflow: hidden;
 }
 .I {
@@ -649,6 +690,30 @@ div.B a {
 }
 .H4DivBottom1, .pDivBottom1 {
 	color: white !important;
+}
+@media screen and (max-width: 770px) {
+    #osmiDiv {
+	padding-left: 150px;
+	padding-right: 150px;
+	}
+}
+@media screen and (max-width: 620px) {
+    #osmiDiv {
+	padding-left: 100px;
+	padding-right: 100px;
+	}
+}
+@media screen and (max-width: 510px) {
+    #osmiDiv {
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+}
+@media screen and (max-width: 350px) {
+    #osmiDiv {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
 }
 
 /* kraj CSSa za kocke/projekte */
