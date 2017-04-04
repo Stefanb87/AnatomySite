@@ -1,0 +1,893 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#cetvrtiDiv {
+	overflow: hidden;
+}
+/* CSS za NAV*/
+nav {
+	background-color: white !important;
+	height: 60px;
+	padding-top: 0px !important;
+}
+.navbar-collapse {
+	margin-top: 5px;
+}
+#batmanLogo {
+	width: 60px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	margin-top: 6px;
+}
+.aNav {
+	color: black !important;
+	font-weight: bolder !important;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 12px;
+}
+.aNav:hover {
+	color: darkblue !important;
+	background-color: lightgray !important;
+	transition-property: all;
+    transition-duration: 1s;
+}
+.aNav:focus {
+	color: darkblue !important;
+}
+.navbar-collapse {
+	background-color: white !important;
+}
+#imgFlag {
+	margin-bottom: 2px !important;
+}
+
+/* CSS za carousel*/
+
+/*#myCarousel {
+	height: 770px;
+}
+.carousel-inner, .item {
+	height: 770px;
+}
+.itemImg {
+	height: 100% !important;
+
+}*/
+.carousel-indicators li {
+	border-radius: 0px !important;
+	width: 40px !important;
+	height: 5px !important;
+	background-color: lightgray !important;
+}
+.item {
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/slider-1.jpg");
+	height: 740px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.item2 {
+	background-image: url("https://source.unsplash.com/XVlOOeIwLg0/1600x800");
+	height: 740px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.item3 {
+	background-image: url("https://source.unsplash.com/v1VB91uuyaE/1600x800");
+	height: 740px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+/* CSS za prvi DIV*/
+
+#prviDiv h1 {
+	font-weight: bolder;
+	font-size: 60px;
+}
+#imgPrviDiv {
+	background-image: url("https://source.unsplash.com/uHJ-DIQtQwk/900x1600");
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 900px;
+}
+#aboutPrviDiv {
+	height: 900px;
+	padding: 100px 200px 100px 100px;
+}
+#prviDiv p {
+	margin-top: 30px;
+}
+hr {
+	margin-top: 30px !important;
+	margin-bottom: 30px !important;
+}
+@media screen and (max-width: 1400px) {
+    #aboutPrviDiv {
+	padding: 100px 100px 100px 50px;
+	}
+}
+@media screen and (max-width: 1000px) {
+    #aboutPrviDiv {
+	padding: 100px 60px 100px 25px;
+	}
+}
+@media screen and (max-width: 770px) {
+    #aboutPrviDiv {
+	padding: 100px 100px 0px 35px;
+	}
+	#imgPrviDiv {
+		height: 300px;
+		background-position: center center;
+	}
+}
+@media screen and (max-width: 500px) {
+    #aboutPrviDiv {
+	padding: 100px 50px 0px 25px;
+	}
+	#prviDiv h1 {
+	font-size: 45px;
+	}
+	#prviDiv h3 {
+	font-size: 20px;
+	}
+	#imgPrviDiv {
+		height: 0px;
+	}
+}
+
+/* CSS za drugi DIV*/
+
+#drugiDiv {
+	background-color: #e6faff;
+	padding: 70px 170px;
+	text-align: center;
+}
+/*#rowFlex {
+	display: flex;
+}*/
+
+#drugiDiv h5 {
+	font-weight: bolder;
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+/*.teamGlavni {
+	flex: 1;
+	margin-left: 15px;
+	margin-right: 15px;
+}*/
+.teamDrugi1 {
+	position: relative;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/alice-price-avatar.jpg");
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.teamDrugi2 {
+	position: relative;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/max-powell-avatar.jpg");
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.teamDrugi3 {
+	position: relative;
+	background-image: url("http://mnml.seoanatomy.com/wp-content/uploads/2016/12/frederick-miller-avatar.jpg");
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+#divBIO {
+	background-color: blue;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	width: 100%;
+	height: 450px;
+	opacity: 0;
+}
+#divBIO:hover {
+  animation-name: example;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 0.75;}
+}
+.pProjekat {
+	color: white;
+	font-weight: bolder;
+	font-size: 20px;
+	padding-top: 220px;
+	padding-bottom: 150px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	opacity: 1;
+}
+#bottom {
+	background-color: white;
+	height: 80px;
+	padding-top: 15px;
+}
+.pImePrezime {
+	margin-bottom: 0px;
+	color: darkblue;
+	font-weight: bolder;
+}
+@media screen and (max-width: 1200px) {
+    #drugiDiv {
+	padding: 70px 100px;
+	}
+}
+@media screen and (max-width: 1100px) {
+    #drugiDiv {
+	padding: 70px 40px;
+	}
+}
+@media screen and (max-width: 950px) {
+    #drugiDiv {
+	padding: 40px 10px;
+	}
+}
+}
+/*.pProjekat:hover {
+  animation-name: examplee;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes examplee {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}*/
+
+/* CSS za treci DIV*/
+
+div#treciDiv {
+	
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+	
+}
+#treciDiv h3 {
+	color: white;
+	font-weight: bolder;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+#btnBuy {
+	width: 10%;
+	height: 40px;
+	background-color: darkblue;
+	color: white;
+	font-weight: bolder;
+	outline: 0;
+	border: none;
+}
+@media screen and (max-width: 900px) {
+    #btnBuy {
+	width: 20%;
+	}
+}
+@media screen and (max-width: 550px) {
+    #btnBuy {
+	width: 30%;
+	}
+}
+@media screen and (max-width: 400px) {
+    #btnBuy {
+	width: 60%;
+	}
+}
+
+/* CSS za cetvrti DIV*/
+
+#cetvrtiDiv {
+	margin-bottom: 0px !important;
+}
+#cetvrtiDiv h1 {
+	font-weight: bolder;
+	font-size: 60px;
+}
+#imgCetvrtiDiv {
+	background-image: url("https://source.unsplash.com/uHJ-DIQtQwk/900x1600");
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 900px;
+}
+#servicesCetvrtiDiv {
+	height: 900px;
+	padding: 100px 100px 100px 200px;
+	text-align: left;
+}
+.rowSadrzaj {
+	padding-right: 100px;
+}
+#cetvrtiDiv p {
+	margin-top: 30px;
+}
+#imgCetvrtiDiv {
+	background-image: url("https://source.unsplash.com/uHJ-DIQtQwk/900x1600");
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 900px;
+}
+@media screen and (max-width: 1400px) {
+    #servicesCetvrtiDiv {
+	padding: 100px 50px 100px 100px;
+	}
+}
+@media screen and (max-width: 1000px) {
+    #servicesCetvrtiDiv {
+	padding: 100px 25px 100px 60px;
+	}
+}
+@media screen and (max-width: 770px) {
+    #servicesCetvrtiDiv {
+	padding: 100px 35px 0px 100px;
+	}
+	#imgCetvrtiDiv {
+		height: 300px;
+		background-position: center center;
+	}
+	.rowSadrzaj {
+	padding-right: 150px;
+}
+}
+@media screen and (max-width: 500px) {
+    #servicesCetvrtiDiv {
+	padding: 100px 25px 0px 50px;
+	}
+	#cetvrtiDiv h1 {
+	font-size: 45px;
+	}
+	#cetvrtiDiv h3 {
+	font-size: 20px;
+	}
+	#imgCetvrtiDiv {
+		height: 0px;
+	}
+	.rowSadrzaj {
+	padding-right: 100px;
+}
+}
+@media screen and (max-width: 370px) {
+    #servicesCetvrtiDiv {
+	padding: 0px 25px 0px 50px;
+	}
+}
+#servicesCetvrtiDiv {
+	height: 900px;
+}
+.rowSadrzaj {
+	position: relative;
+	margin-bottom: 50px;
+}
+.ikonaCetvrtiDiv {
+	border: 2px solid lightblue;
+	color: darkblue;
+	position: absolute;
+	top: 0;
+	padding: 10px;
+}
+.divSadrzajCetvrtiDiv {
+	display: inline-block;
+	width: 135%;
+}
+.H5Sadrzaj {
+	margin: 0px;
+	padding-left: 70px;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+.pSadrzaj {
+	margin: 0px !important;
+	padding-left: 70px;
+}
+@media screen and (min-width: 1600px) {
+    .divSadrzajCetvrtiDiv {
+	padding-right: 50px;
+	}
+}
+/* CSS za peti DIV*/
+
+#petiDiv {
+	background-image: url('http://mnml.seoanatomy.com/wp-content/themes/mnml/images/pattern.png');
+	height: 200px;
+	padding-left: 250px;
+	padding-right: 250px;
+	text-align: center;
+}
+.imgLogo {
+	width: 50%;
+	height: 60px;
+	margin-top: 70px;
+}
+.imgHover:hover img {
+   -webkit-transform:scale(1.35); /* Safari and Chrome */
+   -moz-transform:scale(1.35); /* Firefox */
+   -ms-transform:scale(1.35); /* IE 9 */
+   -o-transform:scale(1.35); /* Opera */
+    transform:scale(1.35);
+
+    -webkit-transition: transform 0.70s ease;
+    -moz-transition:transform 0.70s ease;
+    -ms-transition:transform 0.70s ease;
+}
+@media screen and (max-width: 1300px) {
+    #petiDiv {
+	padding-left: 150px;
+	padding-right: 150px;
+	}
+}
+@media screen and (max-width: 1050px) {
+    #petiDiv {
+	padding-left: 70px;
+	padding-right: 70px;
+	}
+}
+@media screen and (max-width: 992px) {
+    #petiDiv {
+	height: 350px;
+	}
+}
+@media screen and (max-width: 770px) {
+    #petiDiv {
+	height: 580px;
+	}
+}
+@media screen and (max-width: 450px) {
+    .imgLogo {
+	width: 80%;
+	}
+}
+
+/* CSS za sesti DIV*/
+
+#imgSestiDiv {
+	background-image: url("https://source.unsplash.com/uHJ-DIQtQwk/900x1600");
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 900px;
+}
+#pricingSestiDiv {
+	height: 900px;
+}
+#sestiDiv {
+	margin-bottom: 0px !important;
+}
+.hrSestiDiv {
+	width: 70%;
+}
+#sestiDiv h1 {
+	font-weight: bolder;
+	font-size: 60px;
+	padding-left: 100px;
+}
+#servicesSestiDiv {
+	height: 900px;
+	padding: 100px 100px 100px 0px;
+	text-align: left;
+}
+.divCenaSestiDiv {
+	text-align: right !important;
+	padding-top: 10px;
+}
+.spanCena {
+  font-size: 80px;
+}
+.spanDolar {
+  vertical-align: top;
+  font-size: 30px !important;
+}
+.pSadrzajSestiDiv {
+	padding-left: 0px;
+}
+.H5SadrzajSestiDiv {
+	padding-left: 0px;
+	font-weight: bolder;
+}
+.btnSestiDiv {
+	transform: rotate(-90deg);
+	background-color: darkblue;
+	color: white;
+	font-weight: bolder;
+	width: 60%;
+	margin-top: 60px;
+	border: none;
+	outline: 0;
+}
+.rowSadrzaj12 {
+	margin-bottom: 70px;
+}
+@media screen and (max-width: 1400px) {
+    #servicesSestiDiv {
+	padding: 100px 0px 100px 50px;
+	}
+}
+@media screen and (max-width: 1000px) {
+    #servicesSestiDiv {
+	padding: 100px 0px 100px 25px;
+	}
+}
+@media screen and (max-width: 770px) {
+    #servicesSestiDiv {
+	padding: 100px 100px 0px 35px;
+	}
+	/*.divCenaSestiDiv {
+	text-align: left !important;
+	padding-top: 10px;
+	}*/
+	.btnSestiDiv {
+		width: 80%;
+	}
+	#imgSestiDiv {
+		height: 300px;
+		background-position: center center;
+	}
+}
+@media screen and (max-width: 500px) {
+    #servicesSestiDiv {
+	padding: 100px 50px 0px 25px;
+	}
+	#sestiDiv h1 {
+	font-size: 45px;
+	}
+	#sestiDiv h3 {
+	font-size: 20px;
+	}
+	#imgSestiDiv {
+		height: 0px;
+	}
+	.btnSestiDiv {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 440px) {
+    #servicesSestiDiv {
+	padding: 40px 0px 50px 15px;
+	}
+}
+@media screen and (max-width: 390px) {
+    #servicesSestiDiv {
+	padding: 0px 0px 0px 0px;
+	}
+	.btnSestiDiv {
+		width: 160%;
+	}
+	.rowSadrzaj12 {
+		padding-right: 50px;
+	}
+}
+
+/* CSS za sedmi DIV*/
+
+#sedmiDiv {
+	background-image: url('http://mnml.seoanatomy.com/wp-content/themes/mnml/images/pattern.png');
+	height: 250px;
+	text-align: center;
+	padding-top: 80px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.ikonaSedmiDiv {
+	color: darkblue;
+	margin-bottom: 10px;
+}
+.pSedmiDiv {
+	margin-bottom: 0px;
+}
+@media screen and (max-width: 1100px) {
+    #sedmiDiv {
+	padding-left: 100px;
+	padding-right: 100px;
+	}
+}
+@media screen and (max-width: 992px) {
+    #sedmiDiv {
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 350px;
+	}
+}
+
+/* CSS za osmi DIV* kopirano iz cetvrtog */ 
+
+#osmiDiv {
+	text-align: center;
+	margin-bottom: 70px;
+}
+#osmiDiv  h2 {
+	color: black;
+	font-weight: bolder;
+	margin-top: 80px;
+	font-size: 60px;
+	margin-bottom: 25px;
+}
+#osmiDiv  p {
+	color: black;
+	width: 70%;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#osmiDiv button {
+	margin: 30px 5px;
+	background-color: white;
+	border: none;
+	color: gray;
+	font-weight: bolder;
+	font-size: 17px;
+	padding: 5px 10px;
+}
+#osmiDiv button:focus {
+	outline: 0;
+}
+#osmiDiv button:hover {
+	color: black !important;
+	transition-property: all;
+    transition-duration: 1s;
+}
+.BAllBoja {
+	color: darkblue !important;
+}
+
+/* CSS za kocke/projekte */
+
+.P {
+	height: 250px;
+	position: relative;
+	padding: 0px !important;
+	overflow: hidden;
+}
+.I {
+	width: 0%;
+	height: 250px;
+	background-color: darkblue;
+	position: absolute;
+	right: 0px;
+	z-index: 2;
+	opacity: 0.4;
+	padding: 0px;
+	margin: 0px;
+}
+.B {
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.imgProjekat {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.P:hover img {
+   -webkit-transform:scale(1.35); /* Safari and Chrome */
+   -moz-transform:scale(1.35); /* Firefox */
+   -ms-transform:scale(1.35); /* IE 9 */
+   -o-transform:scale(1.35); /* Opera */
+    transform:scale(1.35);
+
+     -webkit-transition: transform 0.70s ease;
+    -moz-transition:transform 0.70s ease;
+    -ms-transition:transform 0.70s ease;
+}
+div.B a {
+	padding-top: 50px;
+}
+.H4DivBottom1, .pDivBottom1 {
+	color: white !important;
+}
+@media screen and (max-width: 770px) {
+    #osmiDiv {
+	padding-left: 150px;
+	padding-right: 150px;
+	}
+}
+@media screen and (max-width: 620px) {
+    #osmiDiv {
+	padding-left: 100px;
+	padding-right: 100px;
+	}
+}
+@media screen and (max-width: 510px) {
+    #osmiDiv {
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+}
+@media screen and (max-width: 350px) {
+    #osmiDiv {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+}
+.ROpis {
+	height: 330px !important;
+}
+.imgProjekatOpis {
+	height: 330px !important;
+	width: 100%;
+}
+.colOpisImg {
+	padding-left: 10px !important;
+	padding-top: 10px !important;
+	padding-right: 60px !important;
+}
+.colOpisText {
+	text-align: left;
+}
+.colOpisText p {
+	margin-left: 0px !important;
+}
+.colOpisText h4 {
+	margin-top: 50px !important;
+}
+.colOpisText a {
+	text-decoration: none !important;
+}
+.colOpisText button {
+	border: 2px solid black !important;
+	position: absolute;
+	color: black !important;
+	font-weight: bolder !important;
+	padding: 0px 10px !important;
+	right: 5px;
+	top: 10px;
+}
+
+/* kraj CSSa za kocke/projekte */
+
+/* CSS za deveti DIV*/
+
+#devetiDiv {
+	text-align: center;
+	padding-bottom: 100px;
+}
+#devetiDiv  h2 {
+	color: black;
+	font-weight: bolder;
+	margin-top: 80px;
+	font-size: 60px;
+	margin-bottom: 25px;
+}
+#rowPhone {
+	padding: 0px;
+}
+.divSelect {
+	padding-right: 0px !important;
+}
+#btnMessage {
+	width: 100%;
+	background-color: darkblue !important;
+	border-radius: 0px !important;
+	font-weight: bolder;
+	height: 50px;
+}
+.divForma {
+	margin-bottom: 30px;
+	color: black !important;
+}
+.form-control {
+	border: none !important;
+	border-radius: 0px !important;
+	border-bottom: 3px solid black !important;
+	outline: none !important;
+	box-shadow: none !important;
+	padding-left: 0px !important;
+}
+@media screen and (max-width: 770px) {
+    #colForma1 {
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+}
+*::-webkit-input-placeholder {
+    color: black !important;
+    font-weight: bolder !important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: black !important;
+    font-weight: bolder !important;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: black !important;
+    font-weight: bolder !important;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: black !important;
+    font-weight: bolder !important;
+}
+option {
+	color: darkblue !important;
+	font-weight: bolder !important;
+}
+.hFooter {
+	color: darkblue;
+	font-weight: bolder;
+	margin-top: 0px;
+}
+.rowContact {
+	text-align: left;
+	padding-left: 80px;
+}
+.divKontent {
+	padding-top: 20px;
+}
+.spanSestiDiv {
+  font-size: 60px !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.spanSestiDiv:hover {
+  color: #2e2e1f !important;
+  cursor: pointer;
+}
+.twitterBoja {
+  color: #00ffff;
+}
+.faceBoja {
+  color: #0000ff;
+}
+.linkBoja {
+  color: #0066ff;
+}
+.googleBoja {
+  color: #ff0000;
+}
+
+/*CSS za footer*/
+
+#footer {
+  text-align: center;
+  padding: 0px !important;
+  border-radius: 0px !important;
+}
+#pFootera {
+  color: black;
+  margin-top: 20px;
+}
+.foot {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
